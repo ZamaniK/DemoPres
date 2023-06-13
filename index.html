@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+  <h1 style= "font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"class="cent">Welcome To </h1>
+  <h1 style= "font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" id="title2" class="cent">Cherry Blossom TakeOut</h1>
+ 
+  <h2 style= "font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"class="cent">Menu</h2>
+
+  <form>
+    <div style="text-align: center;">
+
+
+      <table class="tableCenter cent">
+        <tr>
+          <td style="text-align: center;" id="grad1" class="menuTd">
+            <input type="checkbox" id="opt1" name="opt1" value="Option 1" /> <label>Option 1</label>
+            <img id="welcomeImg"
+              src="https://t4.ftcdn.net/jpg/00/99/82/31/360_F_99823178_SEgzQ02E1GkV2I5nEXK2Dm8IjrfVssxA.jpg"
+              alt="Hamburger" width="150px" height="130px">
+            <p>Deluxe Hamburger</p>
+            <p>Soft Drink</p>
+            <p>Price: R70.00</p>
+          </td>
+          <br>
+          <td style="text-align: center;" id="grad1" class="menuTd">
+            <input type="checkbox" id="opt2" name="opt2" value="Option 2" /> <label>Option 2</label>
+            <img id="welcomeImg"
+              src="https://st3.depositphotos.com/6759912/12521/i/600/depositphotos_125211626-stock-photo-hot-dog-sandwich-with-cold.jpg"
+              alt="Russian Roll" width="150px" height="130px">
+            <p>Russian in a roll</p>
+            <p>Soft Drink</p>
+            <p>Price: R50.00</p>
+          </td>
+
+          <br>
+
+          <td style="text-align: center;" id="grad1" class="menuTd">
+            <input  type="checkbox" id="opt3" name="opt3" value="Option 3" /> <label>Option 3</label>
+            <img id="welcomeImg"
+              src="https://i.pinimg.com/736x/28/88/5f/28885f491f22b5955d46e0efcefb4c41.jpg"
+              alt="Vegetarian Breyani" width="150px" height="130px">
+            <p>Vegetarian Breyani</p>
+            <p>Soft Drink</p>
+            <p>Price: R100.00</p>
+          </td>
+        </tr>
+      </table>
+
+
+    <div id="card" class="myFont center">Please select a meal option</div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      
+      
+
+      <a href="details.html" onclick="return submit()"><button type="button" class="myButton1">Submit</button></a>
+
+     
+
+
+    </div>
+  </form>
+
+
+
+
+  <script type="text/javascript">
+    function submit() {
+      var opt_1 = document.getElementById("opt1");
+      var opt_2 = document.getElementById("opt2");
+      var opt_3 = document.getElementById("opt3");
+
+      var meal = "";
+      var price = "";
+
+
+      // Check if they select more than one option
+      if ((opt_1.checked && opt_2.checked) || (opt_1.checked && opt_3.checked) || (opt_2.checked && opt_3.checked)) {
+        alert("Please only select one option");
+        return false;
+      }
+
+      // The below code is to pass values to another page and check if they selected nothing
+      if (opt_1.checked == false && opt_2.checked == false && opt_3.checked == false) {
+        alert("Please select one option");
+        return false;
+      }
+      else if (opt_1.checked) {
+
+        meal = "Deluxe Hamburger ";
+        price = "R 70.00";
+
+        sessionStorage.setItem("option", opt_1.value);
+        sessionStorage.setItem("optMeal", meal);
+        sessionStorage.setItem("optDrink", price);
+
+      }
+      //sessionStorage.setItem("mealItem",)
+      else if (opt_2.checked) {
+
+        meal = "Russian in a roll ";
+        price = "R 50.00";
+
+        sessionStorage.setItem("option", opt_2.value);
+        sessionStorage.setItem("optMeal", meal);
+        sessionStorage.setItem("optDrink", price);
+
+
+      }
+      else {
+
+        meal = "Vegetarian Breyani ";
+        price = "R 100.00";
+
+        sessionStorage.setItem("option", opt_3.value);
+        sessionStorage.setItem("optMeal", meal);
+        sessionStorage.setItem("optDrink", price);
+
+
+      }
+
+      return true;
+    }
+  </script>
+</body>
+
+</html>

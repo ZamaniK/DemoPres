@@ -1,0 +1,231 @@
+body {
+
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/207/677/original/cherry-blossom-background-free-vector.jpg");
+    
+
+}
+
+h1{
+
+font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h2{
+    font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+input {
+
+    text-align: center;
+    cursor: pointer;
+}
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 160%;
+
+}
+
+
+
+button {
+    background-image: radial-gradient(#f3d9e7,#e99ac1, #f3cfe2);
+    border: 5px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 5;
+    /*  box will be above */
+    bottom: 1%;
+    left: 46%;
+    position: static;
+    
+
+}
+
+
+#card {
+    border: 3px solid black;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    position: absolute;
+   
+
+    height: 23px;
+    width: 50%;
+    right: 15%;
+    bottom: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    font-size: 175%;
+
+    animation-name: example;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+
+}
+
+#welcomeImg {
+
+    margin-left: 100px;
+    margin-right: 95px;
+    border: 3px solid #ffffff;
+    text-align: center;
+    align-content: center;
+}
+
+#title2{
+font-size: 50px ;
+top : 500px;
+
+}
+
+
+#grad1 {
+    border: 3px solid black;
+
+    margin-top: 25%;
+    margin-bottom: 25%;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 1%;
+    background-color: rgb(255, 187, 0);
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(#ffff66, #cc9900);
+}
+
+#receipt {
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    text-align: center;
+    z-index: -1;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.tableCenter {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    
+}
+
+
+
+.cent {
+    font-family: "Georgia", Times, serif;
+    text-align: center;
+
+}
+
+
+
+.myFont {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-style: italic;
+    color: black;
+    width: 30%;
+}
+
+.myButton1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 52px;
+    font-style: italic;
+    color: black;
+
+}
+
+.myButton1:hover {
+    background-image: radial-gradient(#ffcce6, #ff1c68,#77043e );
+    font-size: 60px;
+    color: white;
+}
+
+.menuTd {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 2px;
+}
+
+
+.reTd{
+
+font-size: 39px;
+z-index: 2;
+position: static;
+align-content: center;
+
+background-image: url(https://img.freepik.com/free-vector/chinese-new-year-celebration-festive-background_53876-96455.jpg);
+background-size: cover;
+cursor: pointer;
+    border-radius: 20%;
+
+
+}
+
+.thankYou{
+
+    bottom: 1%;
+    margin-bottom: 20px;  
+    left: 1%;
+    position: absolute;
+
+}
+
+#newFont{
+
+    font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.reBackground{
+
+
+    background-image: url(https://img.freepik.com/free-vector/new-year-card-template-decorated-with-japanese-vintage-patterns-charms_8130-1343.jpg);
+    width: 45%;
+    height: 25%;
+    
+    }
+
+    
+
+@keyframes example {
+    0%   {background-color: rgb(255, 150, 150);}
+    14.25%  {background-color:rgb(241, 185, 81) ;}
+    28.5%  {background-color: rgb(252, 233, 125);}
+    42.75%  {background-color: rgb(206, 253, 119);}
+    57%  {background-color: rgb(99, 230, 197);}
+    71.25% {background-color:rgb(87, 138, 233) ;}
+    85.5%  {background-color: rgb(175, 134, 240);}
+    99.75%  {background-color: rgb(240, 139, 178);}
+    100%  {background-color: rgb(255, 164, 187);}
+  }
+
+  @keyframes buttonChange {
+    0%   {background-color: rgb(255, 140, 197);}
+    14.25%  {background-color:rgb(255, 28, 104) ;}
+    28.5%  {background-color: rgb(119, 4, 62);}
+   
+  }
